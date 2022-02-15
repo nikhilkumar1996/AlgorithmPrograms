@@ -14,7 +14,8 @@ namespace AlgorithmPrograms
             Console.WriteLine("Welcoome to Algorithm Programs");
             Console.WriteLine("1.Permutation Using Recurrsion" +
                               "\n2.BinarySearch" +
-                              "\n3.Exit");
+                              "\n3.Insertion Sort" +
+                              "\n4.Exit");
             bool flag = true;
             while (flag)
             {
@@ -38,6 +39,13 @@ namespace AlgorithmPrograms
                         break;
 
                     case 3:
+                        InsertionSort insertionSort = new InsertionSort();
+                        int[] arr = { 10, 2, 14, 3, 1, 5, 9 };
+                        insertionSort.Sort(arr);
+                        insertionSort.PrintArray(arr);
+                        break;
+
+                    case 4:
                         flag = false;
                         break;
 
