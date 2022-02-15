@@ -15,7 +15,8 @@ namespace AlgorithmPrograms
             Console.WriteLine("1.Permutation Using Recurrsion" +
                               "\n2.BinarySearch" +
                               "\n3.Insertion Sort" +
-                              "\n4.Exit");
+                              "\n4.BubbleSort" +
+                              "\n5.Exit");
             bool flag = true;
             while (flag)
             {
@@ -46,6 +47,12 @@ namespace AlgorithmPrograms
                         break;
 
                     case 4:
+                        int[] arr1 = { 10, 2, 14, 3, 1, 5, 9 };
+                        BubbleSort.BubbleSortInArray(arr1);
+                        BubbleSort.PrintArray(arr1);
+                        break;
+
+                    case 5:
                         flag = false;
                         break;
 
