@@ -1,0 +1,30 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AlgorithmPrograms
+{
+    public class Permutation
+    {
+        public static void Permutate(string str, int start, int end)
+        {
+            if (start == end)
+            {
+                Console.WriteLine(str);
+            }
+            else
+            {
+                for (int i = start; i <= end; i++)
+                {
+                    str = (Swap(str, start, i));
+                    Permutate(str, start + 1, end);
+                    str = Swap(str, start, i);
+                }
+            }
+
+        }
+        
+    }
+}
