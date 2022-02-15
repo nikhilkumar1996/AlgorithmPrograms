@@ -16,7 +16,8 @@ namespace AlgorithmPrograms
                               "\n2.BinarySearch" +
                               "\n3.Insertion Sort" +
                               "\n4.BubbleSort" +
-                              "\n5.Exit");
+                              "\n5.MergeSort" +
+                              "\n6.Exit");
             bool flag = true;
             while (flag)
             {
@@ -53,6 +54,13 @@ namespace AlgorithmPrograms
                         break;
 
                     case 5:
+                        int[] arr2 = { 32, 12, 9, 65, 24, 5 };
+                        MergeSort.Sort(arr2, 0, arr2.Length - 1);
+                        MergeSort.PrintArray(arr2);
+                        break;
+
+
+                    case 6:
                         flag = false;
                         break;
 
