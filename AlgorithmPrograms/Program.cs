@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,7 +13,8 @@ namespace AlgorithmPrograms
         {
             Console.WriteLine("Welcoome to Algorithm Programs");
             Console.WriteLine("1.Permutation Using Recurrsion" +
-                              "2.Exit");
+                              "\n2.BinarySearch" +
+                              "\n3.Exit");
             bool flag = true;
             while (flag)
             {
@@ -29,6 +31,13 @@ namespace AlgorithmPrograms
                         break;
 
                     case 2:
+                        string txtpath = File.ReadAllText(@"E:\github\AlgorithmPrograms\AlgorithmPrograms\TextFile.txt");
+                        List<string> words = new List<string>(txtpath.Split());
+                        words.Sort();
+                        BinarySearch.BinarySearchWord(words);
+                        break;
+
+                    case 3:
                         flag = false;
                         break;
 

@@ -25,6 +25,16 @@ namespace AlgorithmPrograms
             }
 
         }
-        
+        public static string Swap(string word, int start, int end)
+        {
+            char temp;
+            char[] charArray = word.ToCharArray();
+            temp = charArray[start];
+            charArray[start] = charArray[end];
+            charArray[end] = temp;
+            string s = new string(charArray);
+            return s;
+
+        }
     }
 }
