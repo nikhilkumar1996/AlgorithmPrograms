@@ -18,7 +18,8 @@ namespace AlgorithmPrograms
                               "\n4.BubbleSort" +
                               "\n5.MergeSort" +
                               "\n6.Anagram" +
-                              "\n7.Exit");
+                              "\n7.PrimeNumbers in Range" +
+                              "\n8.Exit");
             bool flag = true;
             while (flag)
             {
@@ -64,8 +65,14 @@ namespace AlgorithmPrograms
                         Anagram.FindAnagram();
                         break;
 
-
                     case 7:
+                        Console.WriteLine("The prime numbers are : ");
+                        PrimeNos primeNum = new PrimeNos();
+                        primeNum.FindPrime();
+                        break;
+
+
+                    case 8:
                         flag = false;
                         break;
 
