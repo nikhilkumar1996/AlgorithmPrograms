@@ -17,7 +17,8 @@ namespace AlgorithmPrograms
                               "\n3.Insertion Sort" +
                               "\n4.BubbleSort" +
                               "\n5.MergeSort" +
-                              "\n6.Exit");
+                              "\n6.Anagram" +
+                              "\n7.Exit");
             bool flag = true;
             while (flag)
             {
@@ -59,8 +60,12 @@ namespace AlgorithmPrograms
                         MergeSort.PrintArray(arr2);
                         break;
 
-
                     case 6:
+                        Anagram.FindAnagram();
+                        break;
+
+
+                    case 7:
                         flag = false;
                         break;
 
