@@ -28,9 +28,13 @@ namespace AlgorithmPrograms
         public static string Swap(string word, int start, int end)
         {
             char temp;
+<<<<<<< HEAD
 
             char[] charArray = word.ToCharArray() ;
 
+=======
+            char[] charArray = word.ToCharArray();
+>>>>>>> Permutation
             temp = charArray[start];
             charArray[start] = charArray[end];
             charArray[end] = temp;
